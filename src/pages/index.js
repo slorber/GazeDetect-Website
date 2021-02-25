@@ -8,32 +8,32 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: <>Easy to Use</>,
+    title: <>Quick to Use</>,
     imageUrl: 'img/undraw_docusaurus_mountain.svg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        GazeDetect is quick for running tests which can last up to 90 seconds. Take all 
+        the tests under 5 minutes and get accurate results!
       </>
     ),
   },
   {
-    title: <>Focus on What Matters</>,
+    title: <>High Accuracy of Measurement</>,
     imageUrl: 'img/undraw_docusaurus_tree.svg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        The tests are designed to be as accurate as possible by using millimeter-level sensititivity
+        to properly track the eyes' movement.
       </>
     ),
   },
   {
-    title: <>Powered by React</>,
+    title: <>Private and Secure</>,
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        The whole website runs locally using Javascript in your own browser and no data is trasmitted anywhere,
+        making all tests safe and secure.
       </>
     ),
   },
@@ -59,8 +59,8 @@ function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`Home`}
+      description="Get started with GazeDetect!">
       <header className={classnames('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
@@ -71,7 +71,7 @@ function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs/doc1')}>
+              to={useBaseUrl('docs/callibration/Introduction')}>
               Get Started
             </Link>
           </div>
