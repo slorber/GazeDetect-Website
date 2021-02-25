@@ -6,15 +6,16 @@ import Webcam from "react-webcam";
 import { drawMesh } from "../../debugging/utilities";
 
 function debugging() {
+  tf.ready();
   const webcamRef = useRef(null);
   const canvasRef = useRef(null);
   const runFacemesh = async () => {
     const net = await facemesh.load(
-      facemesh.SupportedPackages.mediapipeFacemesh
+      facemesh.SupportedPackages.mediapipeFacemesh, {backend: 'webgl', maxFaces: 1, detectionConfidence: 0.9, predictIrises: true}
     );
     setInterval(() => {
       detect(net);
-    }, 0);
+    }, 10);
   };
 
   const detect = async (net) => {
