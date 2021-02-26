@@ -1,11 +1,11 @@
 ---
-id: Introduction
+id: introduction
 title: Introduction
 sidebar_label: Introduction
 ---
 
 This section serves the purpose of callibrating the eye-tracking and gaze estimation algorithms in order to properly track the eyes' movement. 
-The steps for callibration and relatively simple and are mentioned in more detail below.
+The steps for calibration and relatively simple and are mentioned in more detail below.
 
 ## Steps
 
@@ -15,10 +15,10 @@ The steps for callibration and relatively simple and are mentioned in more detai
 4. Try to use your eyes to track the target and the algorithm will tune itself to your lighting conditions.
 
 :::tip
-It is recommended that you roll your eyes as a warmup before attempting the callibration.
+It is recommended that you roll your eyes as a warmup before attempting the calibration.
 :::
 5. In case the algorithm cannot find your eyes, it will pause and display warnings.
-6. When ready, click on the button below to start the callibration.
+6. When ready, click on the button below to start the calibration.
 
 :::warning
 If any discomfort is felt while rolling the eyes, please stop using GazeDetect and talk to a medical professional.

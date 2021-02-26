@@ -3,9 +3,9 @@ import React, { useRef, useEffect } from "react";
 import * as tf from "@tensorflow/tfjs";
 import * as facemesh from "@tensorflow-models/face-landmarks-detection";
 import Webcam from "react-webcam";
-import { drawMesh } from "../../debugging/utilities";
+import { drawMesh } from "./utilities";
 
-function debugging() {
+export default function Debugging() {
   tf.ready();
   const webcamRef = useRef(null);
   const canvasRef = useRef(null);
@@ -49,19 +49,19 @@ function debugging() {
   }, []);
 
   return (
-    <Layout>
+    <main>
       <Webcam
         ref={webcamRef}
         style={{
-          position: "absolute",
+          position: "relative",
           marginLeft: "auto",
           marginRight: "auto",
           left: 0,
           right: 0,
           textAlign: "center",
           zindex: 9,
-          width: 640,
-          height: 480,
+          width: "auto",
+          height: "auto",
         }}
       />
 
@@ -72,15 +72,13 @@ function debugging() {
           marginLeft: "auto",
           marginRight: "auto",
           left: 0,
-          right: 0,
+          right: 150,
           textAlign: "center",
           zindex: 9,
-          width: 640,
-          height: 480,
+          width: "auto",
+          height: "auto",
         }}
       />
-    </Layout>
+    </main>
   );
 }
-
-export default debugging;

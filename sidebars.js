@@ -1,6 +1,7 @@
 module.exports = {
-  someSidebar: {
-    Callibration: ['callibration/Introduction', 'doc2', 'doc3'],
+  mainSidebar: {
+    Calibration: ['calibration/introduction', 'doc2', 'doc3'],
     Features: ['mdx'],
+    Tracking: ['tracking/explanation', 'tracking/debugging']
   },
 };

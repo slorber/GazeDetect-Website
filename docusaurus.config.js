@@ -1,7 +1,7 @@
 module.exports = {
   title: 'GazeDetect',
   tagline: 'Quick and accessible neurological condition screening.',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://gazedetect.vercel.app',
   baseUrl: '/',
   favicon: 'img/GazeDetect.png',
   organizationName: 'Aditya Mangalampalli', // Usually your GitHub org/user name.
@@ -15,8 +15,8 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs/callibration/Introduction',
-          activeBasePath: 'docs/callibration',
+          to: 'docs/calibration/introduction',
+          activeBasePath: 'docs/calibration',
           label: 'Tests',
           position: 'left',
         },
@@ -33,6 +33,7 @@ module.exports = {
         },
       ],
     },
+    hideableSidebar: true,
     footer: {
       style: 'dark',
       links: [
