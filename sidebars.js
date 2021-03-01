@@ -1,6 +1,6 @@
 module.exports = {
   mainSidebar: {
-    Calibration: ['calibration/introduction', 'doc2', 'doc3'],
+    Calibration: ['calibration/introduction', 'calibration/calibrationModule', 'calibration/webCamTest'],
     Features: ['mdx'],
     Tracking: ['tracking/explanation', 'tracking/debugging']
   },

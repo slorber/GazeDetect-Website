@@ -6,6 +6,7 @@ module.exports = {
   favicon: 'img/GazeDetect.png',
   organizationName: 'Aditya Mangalampalli', // Usually your GitHub org/user name.
   projectName: 'GazeDetect', // Usually your repo name.
+  plugins: [],
   themeConfig: {
     navbar: {
       title: 'GazeDetect',
@@ -13,25 +14,9 @@ module.exports = {
         alt: 'GazeDetect Logo',
         src: 'img/GazeDetect.png',
       },
-      items: [
-        {
-          to: 'docs/calibration/introduction',
-          activeBasePath: 'docs/calibration',
-          label: 'Tests',
-          position: 'left',
-        },
-        {
-          to: 'blog', 
-          label: 'Blog',
-          activeBasePath: 'blog',
-          position: 'left',
-        },
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },
-      ],
+    },
+    colorMode: {
+      defaultMode: 'dark',
     },
     hideableSidebar: true,
     footer: {

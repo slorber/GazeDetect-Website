@@ -2,6 +2,7 @@
 id: explanation
 title: Explanation
 sidebar_label: Explanation
+hide_table_of_contents: true
 ---
 
 The algorithm used to track the eyes throughout the various tests are mentioned in detail below.
@@ -32,4 +33,5 @@ out for yourself.
 
 :::note
 In order to test out the algorithm, the app will need access to your camera that is used to track your face, and microphone which is not used.
+For the points to be properly rendered, the app will have to be fullscreened, as not doing so adds an offset.
 :::

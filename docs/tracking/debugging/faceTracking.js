@@ -1,4 +1,3 @@
-import Layout from "@theme/Layout";
 import React, { useRef, useEffect } from "react";
 import * as tf from "@tensorflow/tfjs";
 import * as facemesh from "@tensorflow-models/face-landmarks-detection";
@@ -11,7 +10,7 @@ export default function Debugging() {
   const canvasRef = useRef(null);
   const runFacemesh = async () => {
     const net = await facemesh.load(
-      facemesh.SupportedPackages.mediapipeFacemesh, {backend: 'webgl', maxFaces: 1, detectionConfidence: 0.9, predictIrises: true}
+      facemesh.SupportedPackages.mediapipeFacemesh, {backend: 'webgl', maxFaces: 1, detectionConfidence: 0.8, predictIrises: true}
     );
     setInterval(() => {
       detect(net);
