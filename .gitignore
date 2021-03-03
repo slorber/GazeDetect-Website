@@ -23,4 +23,5 @@ yarn-error.log*
 
 .history/
 .vscode/
+.markdownlint.json
 
