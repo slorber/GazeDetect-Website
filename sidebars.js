@@ -1,7 +1,8 @@
 module.exports = {
   mainSidebar: {
     "Calibration": ['calibration/introduction', 'calibration/calibrationModule', 'calibration/webCamTest'],
-    "Autism": ['autism/introduction', 'autism/excercise', 'autism/sysCheck', 'autism/analysis'],
+    "Conglomerate Testing": ['multiconglomerate/introduction', 'multiconglomerate/excercise', 'multiconglomerate/sysCheck', 'multiconglomerate/analysis'],
+    "Autism":['autism/introduction', 'autism/excercise', 'autism/analysis'],
     "Alzheimer\'s": ['alzheimers/introduction', 'alzheimers/excercise', 'alzheimers/analysis'],
     "Attention Deficit Hyperactivity Disorder": ['adhd/introduction', 'adhd/excercise', 'adhd/analysis'],
     "Bell\'s Palsy": ['bellPalsy/introduction', 'bellPalsy/excercise', 'bellPalsy/analysis'],

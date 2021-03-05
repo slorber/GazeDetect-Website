@@ -10,7 +10,7 @@ export default function Debugging() {
   const canvasRef = useRef(null);
   const runFacemesh = async () => {
     const net = await facemesh.load(
-      facemesh.SupportedPackages.mediapipeFacemesh, {backend: 'webgl', maxFaces: 1, detectionConfidence: 0.8, predictIrises: true}
+      facemesh.SupportedPackages.mediapipeFacemesh, {backend: 'webgl', maxFaces: 1, detectionConfidence: 0.5, predictIrises: true}
     );
     setInterval(() => {
       detect(net);
