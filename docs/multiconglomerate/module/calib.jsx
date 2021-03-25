@@ -20,7 +20,7 @@ var i = 0;
 var iteration = 0;
 var t0 = performance.now();
 
-export default (props) => {
+export default function multiconTest (props) {
 	const setup = (p5, canvasParentRef) => {
     let canvas = p5.createCanvas(1200, 700).parent(canvasParentRef);
 	};
@@ -82,18 +82,25 @@ export default (props) => {
     return new Promise(resolve => setTimeout(resolve, ms));
   }
 
-	return (
-  <Sketch setup={setup} draw={draw} 
-          style={{
-            position: "auto",
-            marginLeft: "auto",
-            marginRight: "auto",
-            left: 0,
-            right: 0,
-            textAlign: "center",
-            zindex: 9,
-            width: "auto",
-            height: "auto",
-            }}
-        />);
+	render(); {
+    if (typeof window !== 'undefined') {
+      const Sketch = loadable(() => import ('react-p5'))
+      return <Sketch setup={setup} draw={draw} 
+      style={{
+        position: "auto",
+        marginLeft: "auto",
+        marginRight: "auto",
+        left: 0,
+        right: 0,
+        textAlign: "center",
+        zindex: 9,
+        width: "auto",
+        height: "auto",
+        }}
+    />
+    }
+    else {
+      return null;
+    };
+  };
 };

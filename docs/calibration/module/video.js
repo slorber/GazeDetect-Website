@@ -43,10 +43,8 @@ export default function WebcamStreamCapture() {
       blobFile = {
         file : blob
       };
-      // const url = URL.createObjectURL(blob);
-      // const a = document.createElement("a");
-      // document.body.appendChild(a);
-      // window.URL.revokeObjectURL(url);
+      localStorage.setItem("calibration", blobFile);
+      console.log(localStorage);
       setRecordedChunks([]);
     }
   }, [recordedChunks]);
